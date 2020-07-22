@@ -24,6 +24,7 @@ python detect_faces.py --image rooster.jpg --prototxt model/caffe/deploy.prototx
 python detect_faces_video.py --prototxt model/caffe/deploy.prototxt.txt --model model/caffe/res10_300x300_ssd_iter_140000.caffemodel
 ```
 3. Run `Yolov3 object detection`
+- Run with image
 ```markdown
 python yolo_objectdetect.py --image images/test.jpg --yolo model/yolo -o ouput/test_out.jpg
 ```
