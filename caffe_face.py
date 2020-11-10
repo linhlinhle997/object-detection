@@ -1,8 +1,4 @@
-# USAGE
-# python detect_faces.py --image rooster.jpg --prototxt model/caffe/deploy.prototxt.txt --model model/caffe/res10_300x300_ssd_iter_140000.caffemodel
-
-# import the necessary packages
-import numpy as np/
+import numpy as np
 import argparse
 import cv2
 

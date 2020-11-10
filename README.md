@@ -17,19 +17,19 @@ pip install -r requirements.txt
 2. Run `Caffe face detection`
 - Run with image
 ```markdown
-python detect_faces.py --image rooster.jpg --prototxt model/caffe/deploy.prototxt.txt --model model/caffe/res10_300x300_ssd_iter_140000.caffemodel
+python caffe_face.py --image ./images/rooster.jpg --prototxt ./model/caffe/deploy.prototxt.txt --model ./model/caffe/res10_300x300_ssd_iter_140000.caffemodel --output ./output/rooster_out.jpg
 ```
 - Run with videostream
 ```markdown
-python detect_faces_video.py --prototxt model/caffe/deploy.prototxt.txt --model model/caffe/res10_300x300_ssd_iter_140000.caffemodel
+python caffe_faces_video.py --prototxt ./model/caffe/deploy.prototxt.txt --model ./model/caffe/res10_300x300_ssd_iter_140000.caffemodel
 ```
 3. Run `Yolov3 object detection`
 - Run with image
 ```markdown
-python yolo_objectdetect.py --image images/test.jpg --yolo model/yolo -o ouput/test_out.jpg
+python yolo_objectdetect.py --image ./images/test.jpg --yolo ./model/yolo/ -o output/test_out.jpg
 ```
 - Run with videostream
 ```markdown
-python yolo_video.py --input videos/airport.mp4 --output output/airport_output.avi --yolo model/yolo
+python yolo_video.py --input ./videos/airport.mp4 --output ./output/airport_output.avi --yolo ./model/yolo/
 ```
 

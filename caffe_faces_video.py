@@ -1,7 +1,3 @@
-# USAGE
-# python detect_faces_video.py --prototxt model/caffe/deploy.prototxt.txt --model model/caffe/res10_300x300_ssd_iter_140000.caffemodel
-
-# import the necessary packages
 from imutils.video import VideoStream
 import numpy as np
 import argparse
